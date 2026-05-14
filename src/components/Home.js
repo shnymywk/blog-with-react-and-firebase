@@ -33,7 +33,7 @@ const Home = () => {
                         </div>
                         <div className="nameAndDeleteButton">
                             <h3>@{post.author.username}</h3>
-                            {post.author.id === auth.currentUser.uid && (
+                            {post.author.id === auth.currentUser?.uid && (
                             <button onClick={() => handleDelete(post.id)}>削除</button>
                             )}
                         </div>
